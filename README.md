@@ -32,3 +32,18 @@ npx create-react-app 디렉토리명 --template typescript
 결론 : 프로젝트의 의존성 패키지를 설치하고 빌드하는 경우 npm, 일회성으로 도구를 실행하거나 최신 버전의 패키지를 사용해야 하는 경우 npx를 사용한다.
 
 [출처](https://ljh86029926.gitbook.io/coding-apple-react/undefined/npm-npx)
+
+#### + 갑분에러
+
+![Alt text](image.png)
+
+OS마다 줄바꿈을 나타내는 문자열이 다르기때문에 형상관리를 해주는 Git이 어느 것을 선택할지 몰라 경고 메세지를 띄워주는 것
+
+**해결법**
+core.autocrlf 켜주면된다.
+
+```
+git config --global core.autocrlf true
+```
+
+[출처](https://dabo-dev.tistory.com/13)
