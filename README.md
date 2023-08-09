@@ -18,8 +18,17 @@ npx create-react-app 디렉토리명 --template typescript
 
 현재 디렉토리에 생성하고 싶다면 디렉토리명에 . 을 넣어주면 된다.
 
-> npm대신 npx를 쓰는이유?
-> 글로벌 모듈을 설치하지 않기 위함이다. 한 번 설치면 끝나는데 왜 좋은 방법이 아닐까?
+3. React 실행
+
+```
+npm start
+```
+
+---
+
+#### npm대신 npx를 쓰는이유?
+
+글로벌 모듈을 설치하지 않기 위함이다. 한 번 설치면 끝나는데 왜 좋은 방법이 아닐까?
 
 1. 모듈이 업데이트 되었는지 안되었는지 확인이 불가능하다.
 2. 업데이트를 진행했을 때 변동사항이 생겨 다른 프로젝트에도 영향을 끼칠 수 있다.
@@ -33,7 +42,13 @@ npx create-react-app 디렉토리명 --template typescript
 
 [출처](https://ljh86029926.gitbook.io/coding-apple-react/undefined/npm-npx)
 
-#### + 갑분에러
+#### npm run start아니고 왜 npm start?
+
+package.json에 기본으로 설정된 scripts인 start, build, test, eject 이외의 scripts를 실행하는 경우 npm run으로 실행시키면 된다.
+
+---
+
+##### + 갑분에러
 
 ![Alt text](image.png)
 
